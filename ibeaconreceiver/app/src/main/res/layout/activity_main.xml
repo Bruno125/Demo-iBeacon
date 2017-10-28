@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="upc.edu.pe.ibeacons.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Found"
+        android:id="@+id/txtFound"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="122dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Found"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/txtFound"
+        android:layout_marginEnd="36dp"
+        android:id="@+id/txtLabelFound" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UUID"
+        android:id="@+id/txtLabelUUID"
+        android:layout_below="@+id/txtLabelFound"
+        android:layout_alignStart="@+id/txtLabelFound"
+        android:layout_marginTop="27dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Major"
+        android:id="@+id/txtLabelMajor"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/txtLabelUUID"
+        android:layout_alignStart="@+id/txtLabelUUID" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Minor"
+        android:id="@+id/txtLabelMinor"
+        android:layout_marginTop="31dp"
+        android:layout_below="@+id/txtLabelMajor"
+        android:layout_alignStart="@+id/txtLabelMajor" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Accuracy"
+        android:id="@+id/txtLabelAccuracy"
+        android:layout_marginTop="39dp"
+        android:layout_below="@+id/txtLabelMinor"
+        android:layout_alignStart="@+id/txtLabelMinor" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Distance"
+        android:id="@+id/txtLabelDistance"
+        android:layout_marginTop="37dp"
+        android:layout_below="@+id/txtLabelAccuracy"
+        android:layout_alignStart="@+id/txtLabelAccuracy" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RSSI"
+        android:id="@+id/txtLabelRSSI"
+        android:layout_marginTop="31dp"
+        android:layout_below="@+id/txtLabelDistance"
+        android:layout_alignStart="@+id/txtLabelDistance" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RSSI"
+        android:id="@+id/txtRSSI"
+        android:layout_alignBaseline="@+id/txtLabelRSSI"
+        android:layout_alignBottom="@+id/txtLabelRSSI"
+        android:layout_alignStart="@+id/txtDistance" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comenzar"
+        android:id="@+id/btnStart"
+        android:layout_below="@+id/txtLabelRSSI"
+        android:layout_alignStart="@+id/txtLabelRSSI"
+        android:layout_marginTop="33dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Found"
+        android:id="@+id/txtUUID"
+        android:layout_above="@+id/txtLabelMajor"
+        android:layout_toEndOf="@+id/txtLabelFound" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Major"
+        android:id="@+id/txtMajor"
+        android:layout_alignBaseline="@+id/txtLabelMajor"
+        android:layout_alignBottom="@+id/txtLabelMajor"
+        android:layout_alignStart="@+id/txtMinor" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Minor"
+        android:id="@+id/txtMinor"
+        android:layout_above="@+id/txtLabelAccuracy"
+        android:layout_alignStart="@+id/txtUUID" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Accuracy"
+        android:id="@+id/txtAccuracy"
+        android:layout_alignBaseline="@+id/txtLabelAccuracy"
+        android:layout_alignBottom="@+id/txtLabelAccuracy"
+        android:layout_alignStart="@+id/txtMinor" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Distance"
+        android:id="@+id/txtDistance"
+        android:layout_alignBaseline="@+id/txtLabelDistance"
+        android:layout_alignBottom="@+id/txtLabelDistance"
+        android:layout_alignStart="@+id/txtAccuracy" />
+</RelativeLayout>
